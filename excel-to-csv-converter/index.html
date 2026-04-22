@@ -1,0 +1,49 @@
+<!--index.html-->
+<!-- HTML for the user interface -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Excel to CSV Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<body>
+    <div class="bg-image">
+    <div class="bg-text">
+    <i class="material-icons">WELCOME!</i>  
+    <p><img src="xlsicon.png" alt="excel" style="float:left;width:100px;height:100px;">
+    <p><img src="csvicon.png" alt="csv" style="float:right;width:105px;height:110px;">       
+    <h1 style="font-size:50px">CAT201 ASSIGNMENT 1</h1>
+    <h1>EXCEL to CSV CONVERTER</h1>
+    <h2>
+        Choose your file:
+    <div id="form-container">
+        <form action="convert.php" method="post" enctype="multipart/form-data">
+            <label for="file">Select an Excel file:</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" value="Convert" name="submit">
+          </form>
+
+        <!-- Display the error message, if any -->  
+        <p id="error-message"><?php echo $errorMessage; ?></p>
+    </div>
+</body>
+
+<footer>
+    <b>
+    <p>Created by:<br>
+    <p>Nur Fatihah Binti Azizi (157367)<br> 
+    <p>Nurulain Binti Hamzah (159424)<br> 
+    <p>Fatin Shahirah Binti Sharifuddin (158050)<br> 
+    <p>Nur Ainna Binti Azizan (156886)<br>
+    <p>This web is created for the purpose of Assignment 1 CAT201-Integrated Software Development Workshop<br> </b>         
+</footer>
+
+</html>
